@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://i.ibb.co/pLDQTk9/whiztech-pc-logo-removebg-preview.png" sizes="48x48" type="image/png">
+    <meta property="og:title" content="WhizTech - Learn Fast">
+    <meta property="og:image" content="https://i.ibb.co/pLDQTk9/whiztech-pc-logo-removebg-preview.png">
+    <meta property="og:url" content="">
+    <title>WhizTech - Learn Fast</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+    <script src="javascript.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="style.css"></link>
+</head>
+<body>
+    <header>
+        <img src="https://i.ibb.co/CvgK33y/whiztech-pc-logo-removebg-preview.png" alt="whiztech-pc-logo-removebg-preview" width="50" height="50" style="float:left">
+        <h1>WhizTech - Learn Fast</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li data-tab-target="#home" class="tab">Home</li>
+            <li data-tab-target="#commands" class="tab">Commands</li>
+            <li data-tab-target="#contact" class="tab">Contact</li>
+        </ul>
+    </nav>
+    
+    <div class="tab-content">
+        <div id="home" data-tab-content>
+            <div class="div">
+                <h2>Welcome</h2>
+                <br>
+                <p>Welcome to the official WhizTech website.<br>On this website you can find official downloads for my Discord Bot Manager version and much more!</p>
+            </div>
+            <div class="div">
+                <h2>Downloads</h2>
+                <button onclick="javascript:window.open('')">Discord Bot Manager V2</button>
+                <button onclick="javascript:window.open('https://mega.nz/file/HkIAQRiZ#6PJhOS7F0wlvwVPUpo2Q9LpZltRia9J7T51IxzkQm1c')">Discord Bot Manager V1</button>
+            </div>
+        </div>
+        <div id="commands" data-tab-content>
+            <div class="div">
+                    <h2>Commands</h2>
+                    <br>
+                    <p>Every command starts with prefix <b>dbm</b>.<br>
+                    How to write a complete command in the Command Console → <b>prefix</b>.<b>command</b>=<b>value</b>. For example <b>dbm</b>.<b>consoleForeColor</b>=<b>red</b> or <b>dbm</b>.<b>appClose</b>.
+                    </p>
+                    <table>
+                        <tr>
+                            <th>Prefix</th>
+                            <th>Command</th>
+                            <th>Value</th>
+                            <th style="background-color: #f2f2f238">Info</th>
+                        </tr>
+                        <tr>
+                            <td>dbm</td>
+                            <td>initBot</td>
+                            <td><i>your bot token</i></td>
+                            <td>Initializes your<br>discord bot</td>
+                        </tr>
+                        <tr>
+                            <td>dbm</td>
+                            <td>consoleForeColor</td>
+                            <td>red, white, blue, green, yellow, purple, pink, orange, black</td>
+                            <td>Changes font color of<br>command console</td>
+                        </tr>
+                        <tr>
+                            <td>dbm</td>
+                            <td>consoleBackColor</td>
+                            <td>red, white, blue, green, yellow, purple, pink, orange, black</td>
+                            <td>Changes background color<br>of command console</td>
+                        </tr>
+                        <tr>
+                            <td>dbm</td>
+                            <td>clearfields</td>
+                            <td>–</td>
+                            <td>Clears all textfields from the application.<br>The Bot Token text field is not affected by this</td>
+                        </tr>
+                        <tr>
+                            <td>dbm</td>
+                            <td>appMinimize</td>
+                            <td>–</td>
+                            <td>Minimizes application</td>
+                        </tr>
+                        <tr>
+                            <td>dbm</td>
+                            <td>appRestart</td>
+                            <td>–</td>
+                            <td>Restarts application</td>
+                        </tr>
+                        <tr>
+                            <td>dbm</td>
+                            <td>appClose</td>
+                            <td>–</td>
+                            <td>Closes application</td>
+                        </tr>
+                    </table>
+            </div>
+        </div>
+        <div id="contact" data-tab-content>
+            <div class="div">
+                <h2>Contact</h2>
+                <br>
+                <div class="contact_div">
+                    <b>E-Mail: </b><p id="emailaddress">whiztech.learnfast@gmail.com</p><button id="copyemailaddressBtn">Copy</button>
+                </div>
+                <div class="contact_div">
+                    <b>Discord: </b><p id="discordusername">masterix9759</p><button id="copydiscordusernameBtn">Copy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        &copy; 2023 WhizTech - Learn Fast. All rights reserved.
+    </footer>
+</body>
+</html>
