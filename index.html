@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://i.ibb.co/pLDQTk9/whiztech-pc-logo-removebg-preview.png" sizes="48x48" type="image/png">
+    <meta property="og:title" content="WhizTech - Learn Fast">
+    <meta property="og:image" content="https://i.ibb.co/pLDQTk9/whiztech-pc-logo-removebg-preview.png">
+    <meta property="og:url" content="">
+    <title>WhizTech - Learn Fast</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+    <script src="javascript.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="style.css"></link>
+</head>
+<body>
+    <header>
+        <img src="https://i.ibb.co/CvgK33y/whiztech-pc-logo-removebg-preview.png" alt="whiztech-pc-logo-removebg-preview" width="50" height="50" style="float:left">
+    </header>
+
+    <nav>
+        <ul>
+            <li data-tab-target="#home" class="tab">Home</li>
+            <li data-tab-target="#commands" class="tab">Commands</li>
+            <li data-tab-target="#contact" class="tab">Contact</li>
+        </ul>
+    </nav>
+    
+    <div class="tab-content">
+        <div id="home" data-tab-content>
+            <button class="downloadbutton" onclick="window.location.href='Discord Bot Manager V2.msi'"><img src="microsoft_32.png" style="margin-right:5px">DOWNLOAD<h5 style="margin-left:5px">(11,52 MB)</h5></button>
+            <!--<a href='#otherversions' class="hyperlink">Other versions</a>-->
+            <div class="hidecanvamenu"></div>
+            <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%; padding-bottom: 0; margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 0px; will-change: transform;">
+                <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAF899QqlzE&#x2F;VRu7XAm1X9rmcEjNEpoCBA&#x2F;view?embed">
+                </iframe>
+            </div>
+            <div class="hidecanvamenu"></div>
+            <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+            padding-bottom: 0; margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+            border-radius: 0px; will-change: transform;">
+            <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAF9EIx4GYQ&#x2F;kTFI77dfpcyQ4VVqQUiy2A&#x2F;view?embed">
+            </iframe>
+            </div>
+            <div class="hidecanvamenu"></div>
+            <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+            padding-bottom: 0; margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+            border-radius: 0px; will-change: transform;">
+            <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAF9EZa1U0U&#x2F;lhDSDR5ysysDT9xY-5zXKQ&#x2F;view?embed">
+            </iframe>
+            </div>
+        </div>
+        <div id="commands" data-tab-content>
+            <div class="div">
+                    <h2>Commands</h2>
+                    <br>
+                    <p>Every command starts with prefix <b>dbm</b>.<br>
+                    How to write a complete command in the Command Console → <b>prefix</b>.<b>command</b>=<b>value</b>. For example <b>dbm</b>.<b>consoleForeColor</b>=<b>red</b> or <b>dbm</b>.<b>appClose</b>.
+                    </p>
+                    <table>
+                        <tr>
+                            <th>Prefix</th>
+                            <th>Command</th>
+                            <th>Value</th>
+                            <th style="background-color: #f2f2f238">Info</th>
+                        </tr>
+                        <tr>
+                            <td>dbm</td>
+                            <td>initBot</td>
+                            <td><i>your bot token</i></td>
+                            <td>Initializes your<br>discord bot</td>
+                        </tr>
+                        <tr>
+                            <td>dbm</td>
+                            <td>consoleForeColor</td>
+                            <td>red, white, blue, green, yellow, purple, pink, orange, black</td>
+                            <td>Changes font color of<br>command console</td>
+                        </tr>
+                        <tr>
+                            <td>dbm</td>
+                            <td>consoleBackColor</td>
+                            <td>red, white, blue, green, yellow, purple, pink, orange, black</td>
+                            <td>Changes background color<br>of command console</td>
+                        </tr>
+                        <tr>
+                            <td>dbm</td>
+                            <td>clearfields</td>
+                            <td>–</td>
+                            <td>Clears all textfields from the application.<br>The Bot Token text field is not affected by this</td>
+                        </tr>
+                        <tr>
+                            <td>dbm</td>
+                            <td>appMinimize</td>
+                            <td>–</td>
+                            <td>Minimizes application</td>
+                        </tr>
+                        <tr>
+                            <td>dbm</td>
+                            <td>appRestart</td>
+                            <td>–</td>
+                            <td>Restarts application</td>
+                        </tr>
+                        <tr>
+                            <td>dbm</td>
+                            <td>appClose</td>
+                            <td>–</td>
+                            <td>Closes application</td>
+                        </tr>
+                    </table>
+            </div>
+        </div>
+        <div id="downloads" data-tab-content>
+            <h2>Downloads</h2>
+            <div class="div">
+                <h3>Mobile</h3>
+                <fieldset>
+                    <legend>Discord Bot Manager</legend>
+                </fieldset>
+                <fieldset>
+                    <legend>MasterixMusic Feed</legend>
+                </fieldset>
+            </div>
+        </div>
+        <div id="contact" data-tab-content>
+            <div class="div">
+                <h2>Contact</h2>
+                <br>
+                <div class="contact_div">
+                    <b>E-Mail: </b><p id="emailaddress">whiztech.learnfast@gmail.com</p><button id="copyemailaddressBtn">Copy</button>
+                </div>
+                <div class="contact_div">
+                    <b>Discord: </b><p id="discordusername">masterix9759</p><button id="copydiscordusernameBtn">Copy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 WhizTech - Learn Fast. All rights reserved.
+    </footer>
+</body>
+</html>
