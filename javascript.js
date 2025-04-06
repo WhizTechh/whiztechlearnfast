@@ -28,3 +28,34 @@ document.getElementById("copydiscordusernameBtn").addEventListener('click', ()=>
     var text = document.getElementById('discordusername').innerHTML;
     navigator.clipboard.writeText(text);
 });
+
+function search() {
+    const searchTerm = document.getElementById('searchingBar').value.toLowerCase();
+    const details = document.querySelectorAll('details');
+    const anchors = document.querySelectorAll('a');
+
+    // Reset all details
+    details.forEach(detail => {
+      detail.open = false;
+    });
+
+    // Highlight and expand matching items
+    anchors.forEach(anchor => {
+      const text = anchor.textContent.toLowerCase();
+      if (text.includes(searchTerm)) {
+        let element = anchor;
+        while (element && element.tagName !== 'DETAILS') {
+          element = element.parentElement;
+        }
+        if (element) {
+          element.open = true;
+          // Open all parent <details> elements
+          let parent = element.parentElement;
+          while (parent && parent.tagName === 'DETAILS') {
+            parent.open = true;
+            parent = parent.parentElement;
+          }
+        }
+      }
+    });
+  }
